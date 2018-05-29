@@ -13,7 +13,10 @@
     <title>{{ config('app.name', 'Laravel') }} - {{Route::currentRouteName()}}</title>
 
     <!-- Styles / Fonts / Scripts / Fonts -->
-    <link rel="stylesheet" charset="utf-8" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" charset="utf-8" href="http://gestao-igrejas.test/materialize-css/css/materialize.min.css"><script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><script type="text/javascript" src="http://gestao-igrejas.test/materialize-css/js/materialize.min.js"></script>
+    <link rel="stylesheet" charset="utf-8" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" charset="utf-8" href="{{ asset('materialize-css/css/materialize.min.css.js') }}">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script><script type="text/javascript" src="{{ asset('materialize-css/js/materialize.min.css.js') }}"></script>
 </head>
 <body @if(Session::has('message')) onload="M.toast({html: '{{ Session::get('message') }}', classes: 'rounded teal'})" @endif >
 <div id="app">
