@@ -73,6 +73,7 @@
                                                 <p><b>Celular: </b>{{$membro->cel}}</p>
                                             @endif
                                             <p><b>Expeditor: </b>{{$membro->orgaoExp}}</p>
+                                            <p><b>Igreja: </b>{{$membro->igreja}}</p>
                                             @if($membro->dtaDesligamento != null)
                                                 <p><b>Desligamento: </b>{{date('d/m/Y', strtotime($membro->dtaDesligamento))}}</p>
                                             @endif
