@@ -14,7 +14,7 @@
 
     <!-- Styles / Fonts / Scripts / Fonts -->
     <link rel="stylesheet" charset="utf-8" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" charset="utf-8" href="{{ asset('materialize-css/css/materialize.min.css.js') }}">
+    <link rel="stylesheet" charset="utf-8" href="{{ asset('materialize-css/css/materialize.min.css') }}">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script><script type="text/javascript" src="{{ asset('materialize-css/js/materialize.min.css.js') }}"></script>
 </head>
