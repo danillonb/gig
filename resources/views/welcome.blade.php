@@ -9,13 +9,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="HQwPpBCALWGVdQm00TYX896vjXK3cnvCOnnVBGaN">
 
-    <link rel="stylesheet" href="{{ asset(pace/pace-theme-minimal.css) }}">
+    <link rel="stylesheet" href="{{ asset('pace/pace-theme-minimal.css') }}">
 
     <title>Bem Vindo</title>
 
     <!-- Styles / Fonts -->
     <link rel="stylesheet" charset="utf-8" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" charset="utf-8" href="{{ asset(materialize-css/css/materialize.min.css) }}"
+    <link rel="stylesheet" charset="utf-8" href="{{ asset('materialize-css/css/materialize.min.css') }}"
           media="screen,projection">
           
 
