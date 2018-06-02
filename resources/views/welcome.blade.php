@@ -58,8 +58,8 @@
         <!--   Icon Section   -->
         <div class="row">
             <div class="col s12 m12 l12">
-                <div class="container">
-                    <h2 class="center brown-text text-darken-2"><i class="far fa-newspaper"></i>Ultimas Notícias</h2>
+                <div class="section">
+                    <h3 class="center brown-text text-darken-2"><i class="far fa-newspaper"></i>Ultimas Notícias</h3>
                     <div class="carousel carousel-slider center">
                         <div class="carousel-fixed-item center">
                             <a class="transparent btn waves-effect white grey-text darken-text-2 z-depth-0">Saber
@@ -84,13 +84,13 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <br>
             <div class="row">
-                <div class="container">
+                <div class="section">
                     <div class="col s12 m6 l6">
                         <div class=video-container">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.21197209591!2d-43.37726449799631!3d-22.831645855513493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9963907ee01381%3A0x2ff45861d58cf9b5!2sPrimeira+Igreja+Evang%C3%A9lica+Assembl%C3%A9ia+de+Deus+em+Bento+Ribeiro!5e0!3m2!1spt-BR!2sbr!4v1527956206649"
-                                    width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    width=100% height=100% frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col s12 m6 l6">
