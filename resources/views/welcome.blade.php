@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Danillo Barbosa">
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="HQwPpBCALWGVdQm00TYX896vjXK3cnvCOnnVBGaN">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="stylesheet" href="{{ asset('pace/pace-theme-minimal.css') }}">
 
@@ -58,14 +58,30 @@
         <div class="row z-depth-2">
             <div class="col s12 m6 l6">
                 <div class="icon-block">
-                    <h2 class="center amber-text text-darken-4"><i class="material-icons">flash_on</i></h2>
-                    <h5 class="center">Speeds up development</h5>
-
-                    <p class="light">We did most of the heavy lifting for you to provide a default stylings that
-                        incorporate our custom components. Additionally, we refined animations and transitions
-                        to
-                        provide a smoother experience for developers.</p>
-                </div>
+                    <h2 class="center amber-text text-darken-4"><i class="far fa-newspaper fa-3x">flash_on</i></h2>
+                    <h5 class="center">Ultimas Notícias</h5>
+                    <div class="carousel carousel-slider center">
+                        <div class="carousel-fixed-item center">
+                          <a class="transparent btn waves-effect white grey-text darken-text-2">Saber Mais</a>
+                        </div>
+                            <div class="carousel-item red white-text" href="#one!">
+                                <h2>First Panel</h2>
+                                <p class="white-text">This is your first panel</p>
+                            </div>
+                            <div class="carousel-item amber white-text" href="#two!">
+                                <h2>Second Panel</h2>
+                                <p class="white-text">This is your second panel</p>
+                            </div>
+                            <div class="carousel-item green white-text" href="#three!">
+                                <h2>Third Panel</h2>
+                                <p class="white-text">This is your third panel</p>
+                            </div>
+                            <div class="carousel-item blue white-text" href="#four!">
+                                <h2>Fourth Panel</h2>
+                                <p class="white-text">This is your fourth panel</p>
+                            </div>
+                        </div>
+                    </div>
             </div>
 
             <div class="col s12 m6 l6">
