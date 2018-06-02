@@ -56,7 +56,7 @@
     <div class="col s12 m12 l7 offset-l1 z-depth-2">
         <!--   Icon Section   -->
         <div class="row z-depth-2">
-            <div class="col s12 m12 l12">
+            <div class="col s12 m12 l7">
                 <div class="icon-block">
                     <h2 class="center brown-text text-darken-2"><i class="far fa-newspaper"></i>Ultimas Notícias</h2>
                     <div class="carousel carousel-slider center">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
             </div>
-            <br>
+            <hr>
         <div class="row">
             <div class="section">
                 <div class="col s12 m6 l6">
