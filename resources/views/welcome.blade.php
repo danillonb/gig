@@ -33,7 +33,7 @@
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
-                <li><a href="{{ route('login') }}" class="black-text">Área Restrita</a>
+                <li><a href="http://polar-brushlands-65191.herokuapp.com/login" class="black-text">Área Restrita</a>
                 </li>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text"><i
@@ -56,8 +56,8 @@
 <div class="row">
     <div class="col s12 m12 l7 offset-l1 z-depth-2">
         <!--   Icon Section   -->
-        <div class="row z-depth-2">
-            <div class="col s12 m12 l7">
+        <div class="row">
+            <div class="col s12 m12 l12">
                 <div class="icon-block">
                     <h2 class="center brown-text text-darken-2"><i class="far fa-newspaper"></i>Ultimas Notícias</h2>
                     <div class="carousel carousel-slider center">
@@ -88,24 +88,13 @@
             <div class="row">
                 <div class="section">
                     <div class="col s12 m6 l6">
-                        <div class="carousel">
-                            <a class="carousel-item" href="#one!"><img
-                                        src="https://pi.tedcdn.com/r/tedideas.files.wordpress.com/2017/05/featured_art_heal_forests.jpg?"></a>
-                            <a class="carousel-item" href="#two!"><img
-                                        src="https://www.nighthelper.com/wp-content/uploads/2016/03/nature_waterfall_summer_lake_trees_90400_3840x2160.jpg"></a>
-                            <a class="carousel-item" href="#three!"><img
-                                        src="https://www.quirkybyte.com/wp-content/uploads/2016/02/Green-Nature-Trees-l.jpg"></a>
-                            <a class="carousel-item" href="#four!"><img
-                                        src="https://image.pbs.org/video-assets/pbs/nature/241862/images/mezzanine_152.jpg"></a>
-                            <a class="carousel-item" href="#five!"><img
-                                        src="https://images.unsplash.com/photo-1506361797048-46a149213205?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=493e200df17b54d1ef10eb61e1df148a&w=1000&q=80"></a>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l6">
                         <div class=video-container">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.21197209591!2d-43.37726449799631!3d-22.831645855513493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9963907ee01381%3A0x2ff45861d58cf9b5!2sPrimeira+Igreja+Evang%C3%A9lica+Assembl%C3%A9ia+de+Deus+em+Bento+Ribeiro!5e0!3m2!1spt-BR!2sbr!4v1527956206649"
                                     width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
+                    </div>
+                    <div class="col s12 m6 l6">
+
                     </div>
                 </div>
             </div>
@@ -118,7 +107,7 @@
             <div class="row">
                 <div class="col s12 m12 l12">
                     <div class="icon-block">
-                        <i class="brown-text text-darken-2 far fa-calendar-alt fa-5x center"></i>
+                        <i class="center brown-text text-darken-2 far fa-calendar-alt fa-5x"></i>
                         <br>
                         <h5 class="center"><b>Segunda-feira - 03/06</b></h5>
                         <p class="center">Oração da Vitória - <b>09h</b></p>
