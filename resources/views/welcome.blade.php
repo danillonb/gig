@@ -68,6 +68,10 @@
                         <div class="carousel-item red white-text" href="#one!">
                             <h2>First Panel</h2>
                             <p class="white-text">This is your first panel</p>
+                            <div class="carousel-fixed-item center">
+                                <a class="transparent btn waves-effect white grey-text darken-text-2 z-depth-0">Saber
+                                    Mais</a>
+                            </div>
                         </div>
                         <div class="carousel-item amber white-text" href="#two!">
                             <h2>Second Panel</h2>
