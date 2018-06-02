@@ -14,6 +14,7 @@
     <title>Bem Vindo</title>
 
     <!-- Styles / Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" charset="utf-8" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" charset="utf-8" href="{{ asset('materialize-css/css/materialize.min.css') }}"
           media="screen,projection">
@@ -49,7 +50,7 @@
 
         </div>
     </div>
-    <div class="parallax"><img src="http://polar-brushlands-65191.herokuapp.com/parallax/background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="{{ asset('img/background1.jpg') }}" alt="Unsplashed background img 1"></div>
 </div>
 <div class="row">
     <div class="col s12 m12 l7 offset-l1 z-depth-2">
@@ -110,7 +111,7 @@
                     <div class="col s12 m12 l12">
                         <div class="icon-block">
                             <div class="valign-wrapper brown-text text-darken-2">
-                                <i class="material-icons large">event_note</i>
+                                <i class="fas fa-calendar-alt fa-3x"></i>
                                 <h3 class="">Anúncios da Semana</h3>
                             </div>
                             <h5 class="center"><b>Segunda-feira - 03/06</b></h5>
