@@ -72,6 +72,6 @@
 
 <!-- Scripts -->
 <script src="{{ asset('pace/pace.js') }}"></script>
-<script src="{{ asset('materialize-css/js/triggers/init.js') }}"></script>
+<script src="{{ asset('materialize-css/js/init.js') }}"></script>
 @yield('page-scripts')
 </html>
