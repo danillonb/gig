@@ -61,10 +61,6 @@
                 <div class="section">
                     <h3 class="center brown-text text-darken-2"><i class="far fa-newspaper"></i> Ultimas Notícias</h3>
                     <div class="carousel carousel-slider center z-depth-2">
-                        <div class="carousel-fixed-item center">
-                            <a class="transparent btn waves-effect white grey-text darken-text-2 z-depth-0">Saber
-                                Mais</a>
-                        </div>
                         <div class="carousel-item red white-text" href="#one!">
                             <h2>First Panel</h2>
                             <p class="white-text">This is your first panel</p>
@@ -76,14 +72,26 @@
                         <div class="carousel-item amber white-text" href="#two!">
                             <h2>Second Panel</h2>
                             <p class="white-text">This is your second panel</p>
+                            <div class="carousel-fixed-item center">
+                                <a class="transparent btn waves-effect white grey-text darken-text-2 z-depth-0">Saber
+                                    Mais</a>
+                            </div>
                         </div>
                         <div class="carousel-item green white-text" href="#three!">
                             <h2>Third Panel</h2>
                             <p class="white-text">This is your third panel</p>
+                            <div class="carousel-fixed-item center">
+                                <a class="transparent btn waves-effect white grey-text darken-text-2 z-depth-0">Saber
+                                    Mais</a>
+                            </div>
                         </div>
                         <div class="carousel-item blue white-text" href="#four!">
                             <h2>Fourth Panel</h2>
                             <p class="white-text">This is your fourth panel</p>
+                            <div class="carousel-fixed-item center">
+                                <a class="transparent btn waves-effect white grey-text darken-text-2 z-depth-0">Saber
+                                    Mais</a>
+                            </div>
                         </div>
                     </div>
                 </div>
