@@ -9,6 +9,10 @@ $(document).ready(function(){
     $('.scrollspy').scrollSpy();
     $('select').formSelect();
     $('.tooltipped').tooltip();
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+    });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
