@@ -56,7 +56,7 @@
     <div class="col s12 m12 l7 offset-l1 z-depth-2">
         <!--   Icon Section   -->
         <div class="row z-depth-2">
-            <div class="col s12 m6 l6">
+            <div class="col s12 m12 l12">
                 <div class="icon-block">
                     <h2 class="center brown-text text-darken-2"><i class="far fa-newspaper"></i>Ultimas Notícias</h2>
                     <div class="carousel carousel-slider center">
@@ -82,23 +82,7 @@
                         </div>
                     </div>
             </div>
-
-            <div class="col s12 m6 l6">
-                <div class="icon-block">
-                    <h2 class="center brown-text text-darken-2"><i class="material-icons">group</i></h2>
-                    <h5 class="center">User Experience Focused</h5>
-
-                    <p class="light">By utilizing elements and principles of Material Design, we were able to
-                        create
-                        a
-                        framework that incorporates components and animations that provide more feedback to
-                        users.
-                        Additionally, a single underlying responsive system across all platforms allow for a
-                        more
-                        unified user experience.</p>
-                </div>
-            </div>
-        </div>
+            <br>
         <div class="row">
             <div class="section">
                 <div class="col s12 m6 l6">
