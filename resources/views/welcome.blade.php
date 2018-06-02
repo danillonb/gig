@@ -22,25 +22,23 @@
 
 </head>
 <body>
-<div class="z-depth-3">
-    <nav class="white">
-        <div class="nav-wrapper">
-            <a id="logo-container" href="#" class="brand-logo grey-text text-darken-2">Welcome</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#contato" class="left grey-text text-darken-2"><b>Contato</b></a></li>
-                <li><a href="{{ route('login') }}"
-                       class="left grey-text text-darken-2"><b>Área Restrita</b></a></li>
-            </ul>
+<nav class="white">
+    <div class="nav-wrapper">
+        <a id="logo-container" href="#" class="brand-logo grey-text text-darken-2">Welcome</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#contato" class="left grey-text text-darken-2"><b>Contato</b></a></li>
+            <li><a href="{{ route('login') }}"
+                   class="left grey-text text-darken-2"><b>Área Restrita</b></a></li>
+        </ul>
 
-            <ul id="nav-mobile" class="sidenav">
-                <li><a href="http://polar-brushlands-65191.herokuapp.com/login" class="black-text">Área Restrita</a>
-                </li>
-            </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text"><i
-                        class="material-icons">menu</i></a>
-        </div>
-    </nav>
-</div>
+        <ul id="nav-mobile" class="sidenav">
+            <li><a href="http://polar-brushlands-65191.herokuapp.com/login" class="black-text">Área Restrita</a>
+            </li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text"><i
+                    class="material-icons">menu</i></a>
+    </div>
+</nav>
 
 <div id="index-banner" class="parallax-container z-depth-2">
     <div class="section no-pad-bot">
@@ -100,7 +98,7 @@
             <div class="row">
                 <div class="section">
                     <div class="col s12 m6 l6">
-                        
+
                     </div>
                     <div class="col s12 m6 l6">
 
