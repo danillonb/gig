@@ -72,13 +72,6 @@
 
 <!-- Scripts -->
 <script src="{{ asset('pace/pace.js') }}"></script>
-<script src="{{ asset('materialize-css/js/triggers/sidenav-trigger.js') }}"></script>
-<script src="{{ asset('materialize-css/js/triggers/dropdown-trigger.js') }}"></script>
-<script src="{{ asset('materialize-css/js/triggers/tooltip-trigger.js') }}"></script>
-<script src="{{ asset('materialize-css/js/triggers/collapsible-trigger.js') }}"></script>
-<script src="{{ asset('materialize-css/js/triggers/scrollspy-trigger.js') }}"></script>
-<script src="{{ asset('materialize-css/js/triggers/float-button-trigger.js') }}"></script>
-<script src="{{ asset('materialize-css/js/triggers/modal-trigger.js') }}"></script>
-<script src="{{ asset('materialize-css/js/triggers/select-form-trigger.js') }}"></script>
+<script src="{{ asset('materialize-css/js/triggers/init.js') }}"></script>
 @yield('page-scripts')
 </html>
