@@ -58,11 +58,10 @@
         <div class="row z-depth-2">
             <div class="col s12 m6 l6">
                 <div class="icon-block">
-                    <h2 class="center amber-text text-darken-4"><i class="far fa-newspaper fa-3x">flash_on</i></h2>
-                    <h5 class="center">Ultimas Notícias</h5>
+                    <h2 class="center brown-text text-darken-2"><i class="far fa-newspaper"></i>Ultimas Notícias</h2>
                     <div class="carousel carousel-slider center">
                         <div class="carousel-fixed-item center">
-                          <a class="transparent btn waves-effect white grey-text darken-text-2">Saber Mais</a>
+                          <a class="transparent btn waves-effect white grey-text darken-text-2 z-depth-0">Saber Mais</a>
                         </div>
                             <div class="carousel-item red white-text" href="#one!">
                                 <h2>First Panel</h2>
@@ -86,7 +85,7 @@
 
             <div class="col s12 m6 l6">
                 <div class="icon-block">
-                    <h2 class="center amber-text text-darken-4"><i class="material-icons">group</i></h2>
+                    <h2 class="center brown-text text-darken-2"><i class="material-icons">group</i></h2>
                     <h5 class="center">User Experience Focused</h5>
 
                     <p class="light">By utilizing elements and principles of Material Design, we were able to
