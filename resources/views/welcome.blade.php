@@ -59,8 +59,8 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="section">
-                    <h3 class="center brown-text text-darken-2"><i class="far fa-newspaper"></i>Ultimas Notícias</h3>
-                    <div class="carousel carousel-slider center">
+                    <h3 class="center brown-text text-darken-2"><i class="far fa-newspaper"></i> Ultimas Notícias</h3>
+                    <div class="carousel carousel-slider center z-depth-2">
                         <div class="carousel-fixed-item center">
                             <a class="transparent btn waves-effect white grey-text darken-text-2 z-depth-0">Saber
                                 Mais</a>
