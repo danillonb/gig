@@ -196,7 +196,7 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
 </script>
 <script type="text/javascript" src="{{ asset('materialize-css/js/materialize.min.js') }}"></script>
-<script src="{{ asset('materialize-css/js/triggers/init.js') }}"></script>
+<script src="{{ asset('materialize-css/js/init.js') }}"></script>
 <script src="{{ asset('pace/pace.js') }}"></script>
 
 
