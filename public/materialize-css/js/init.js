@@ -21,10 +21,3 @@ document.addEventListener('DOMContentLoaded', function() {
         hoverEnabled: false
     });
 });
-
-function autoplay() {
-    $('.carousel.carousel-slider').carousel('next');
-    setTimeout(autoplay, 4500);
-}
-
-autoplay();
