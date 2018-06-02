@@ -111,8 +111,8 @@
                     <div class="col s12 m12 l12">
                         <div class="icon-block">
                             <div class="valign-wrapper brown-text text-darken-2">
-                                <i class="fas fa-calendar-alt fa-3x"> </i>
-                                <h3 class="">Anúncios da Semana</h3>
+                                <i class="fas fa-calendar-alt fa-5x"></i>
+                                <h5 class=""> Anúncios da Semana</h5>
                             </div>
                             <h5 class="center"><b>Segunda-feira - 03/06</b></h5>
                             <p class="center">Oração da Vitória - <b>09h</b></p>
