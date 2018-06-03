@@ -13,3 +13,4 @@ yarn-error.log
 .env
 composer.phar
 /config/database.php
+composer.phar

@@ -22,20 +22,21 @@
 
 </head>
 <body>
-<nav class="white">
-    <div class="nav-wrapper">
-        <a id="logo-container" href="#" class="brand-logo grey-text text-darken-2">Welcome</a>
+<nav class="teal lighten-1">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo truncate hide-on-small-only">Ass. de Deus em Camboatá</a>
+        <a id="logo-container" href="#" class="brand-logo hide-on-med-and-up">ADC</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#contato" class="left grey-text text-darken-2"><b>Contato</b></a></li>
+            <li><a href="#contato" class="left">Contato</a></li>
             <li><a href="{{ route('login') }}"
-                   class="left grey-text text-darken-2"><b>Área Restrita</b></a></li>
+                   class="left">Área Restrita</a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
             <li><a href="http://polar-brushlands-65191.herokuapp.com/login" class="black-text">Área Restrita</a>
             </li>
         </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text"><i
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i
                     class="material-icons">menu</i></a>
     </div>
 </nav>
@@ -43,9 +44,6 @@
 <div id="index-banner" class="parallax-container z-depth-2">
     <div class="section no-pad-bot">
         <div class="container">
-            <h1 class="header white-text">Assembeia de Deus</h1>
-            <h5 class="header col s12 light white-text"><b>Em Camboatá</b></h5>
-            <br><br>
 
         </div>
     </div>
@@ -57,13 +55,13 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="section">
-                    <h3 class="center brown-text text-darken-2"><i class="far fa-newspaper"></i> Ultimas Notícias</h3>
+                    <h3 class="center teal-text text-darken-2"><i class="far fa-newspaper"></i> Ultimas Notícias</h3>
                     <div class="carousel carousel-slider center z-depth-2">
                         <div class="carousel-item red white-text" href="#one!">
                             <h2>First Panel</h2>
                             <p class="white-text">This is your first panel</p>
-                            <div class="carousel-fixed-item center">
-                                <a class="transparent btn waves-effect white grey-text darken-text-2 z-depth-0">Saber
+                            <div class="carousel-fixed-item">
+                                <a class="btn waves-effect teal">Saber
                                     Mais</a>
                             </div>
                         </div>
@@ -71,7 +69,7 @@
                             <h2>Second Panel</h2>
                             <p class="white-text">This is your second panel</p>
                             <div class="carousel-fixed-item center">
-                                <a class="transparent btn waves-effect white grey-text darken-text-2 z-depth-0">Saber
+                                <a class="btn waves-effect teal">Saber
                                     Mais</a>
                             </div>
                         </div>
@@ -79,7 +77,7 @@
                             <h2>Third Panel</h2>
                             <p class="white-text">This is your third panel</p>
                             <div class="carousel-fixed-item center">
-                                <a class="transparent btn waves-effect white grey-text darken-text-2 z-depth-0">Saber
+                                <a class="btn waves-effect teal">Saber
                                     Mais</a>
                             </div>
                         </div>
@@ -87,7 +85,7 @@
                             <h2>Fourth Panel</h2>
                             <p class="white-text">This is your fourth panel</p>
                             <div class="carousel-fixed-item center">
-                                <a class="transparent btn waves-effect white grey-text darken-text-2 z-depth-0">Saber
+                                <a class="btn waves-effect teal">Saber
                                     Mais</a>
                             </div>
                         </div>
@@ -109,12 +107,13 @@
     </div>
 
     <div class="col s12 m12 l4 z-depth-2">
-        <div class="section">
+        <div class="col s12 m12 l12">
             <!--   Icon Section   -->
             <div class="row">
-                <div class="col s12 m12 l12">
+
+                <div class="section">
                     <div class="icon-block">
-                        <i class="center brown-text text-darken-2 far fa-calendar-alt fa-5x"></i>
+                        <h3 class="center teal-text text-darken-2"><i class="far fa-calendar-alt"></i> Anúncios da Semana</h3>
                         <br>
                         <h5 class="center"><b>Segunda-feira - 03/06</b></h5>
                         <p class="center">Oração da Vitória - <b>09h</b></p>
@@ -153,41 +152,11 @@
 
 <div class="row">
 </div>
-<footer class="page-footer white black-text z-depth-2">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="grey-text">Company Bio</h5>
-                <p>We are a team of college students working on this project like
-                    it's
-                    our full time job. Any amount would help support and continue development on this project and is
-                    greatly appreciated.</p>
-
-
-            </div>
-            <div class="col l3 s12">
-                <h5 class="">Settings</h5>
-                <ul>
-                    <li><a href="#!">Link 1</a></li>
-                    <li><a href="#!">Link 2</a></li>
-                    <li><a href="#!">Link 3</a></li>
-                    <li><a href="#!">Link 4</a></li>
-                </ul>
-            </div>
-            <div class="col l3 s12">
-                <h5 class="">Connect</h5>
-                <ul>
-                    <li><a href="#!">Link 1</a></li>
-                    <li><a href="#!">Link 2</a></li>
-                    <li><a href="#!">Link 3</a></li>
-                    <li><a href="#!">Link 4</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<footer class="page-footer teal black-text">
     <div class="footer-copyright">
         <div class="container">
-            Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            <a href="#" class="right white-text">Developed by Danillo Barbosa</a>
         </div>
     </div>
 </footer>

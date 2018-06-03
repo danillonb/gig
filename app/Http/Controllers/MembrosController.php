@@ -116,8 +116,6 @@ class MembrosController extends Controller
                 'fotoId' => $fotoId
             ]);
 
-            dd($fotoId);
-            //$request->foto->storeAs($membroCriado->id, $membroCriado->id . '.png', 'img_profile');
 
             Session::flash('message', 'Membro cadastrado com sucesso!');
 
@@ -208,9 +206,6 @@ class MembrosController extends Controller
             $membro->update([
                 'fotoId' => $fotoId
             ]);
-
-
-            //$request->foto->storeAs($request->id, $request->id . '.png', 'img_profile');
 
 
             Session::flash('message', 'Membro atualizado com sucesso!');
