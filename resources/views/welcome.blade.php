@@ -33,7 +33,7 @@
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-            <li><a href="http://polar-brushlands-65191.herokuapp.com/login" class="black-text">Área Restrita</a>
+            <li><a href="{{ route('login') }}" class="black-text">Área Restrita</a>
             </li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i
@@ -50,7 +50,7 @@
     <div class="parallax"><img src="{{ asset('img/background1.jpg') }}" alt="Unsplashed background img 1"></div>
 </div>
 <div class="row">
-    <div class="col s12 m12 l7 offset-l1 z-depth-2">
+    <div class="col s12 m12 l7 offset-l1 ">
         <!--   Icon Section   -->
         <div class="row">
             <div class="col s12 m12 l12">
@@ -114,7 +114,6 @@
                 <div class="section">
                     <div class="icon-block">
                         <h3 class="center teal-text text-darken-2"><i class="far fa-calendar-alt"></i> Anúncios da Semana</h3>
-                        <br>
                         <h5 class="center"><b>Segunda-feira - 03/06</b></h5>
                         <p class="center">Oração da Vitória - <b>09h</b></p>
                         <p class="center">Oração de Cura e Libertação - <b>19h</b></p>

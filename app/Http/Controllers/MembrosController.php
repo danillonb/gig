@@ -28,7 +28,7 @@ class MembrosController extends Controller
     public function index()
     {
         //$users = User::paginate(10);
-        $listaMembros = Membro::all();
+        $listaMembros = Membro::where('ativo', 1)->get();
 
         return view('membros.indexMembros', compact('listaMembros'));
     }
@@ -51,19 +51,19 @@ class MembrosController extends Controller
         if ($request->dtaBatismoAguas != null) {
             $dtaBatismoAguas = str_replace("/", "-", $request->dtaBatismoAguas);
             $dtaBatismoAguasSql = date('Y-m-d', strtotime($dtaBatismoAguas));
-        }else{
+        } else {
             $dtaBatismoAguasSql = $request->dtaBatismoAguas;
         }
         if ($request->dtaBatismoEs != null) {
             $dtaBatismoEs = str_replace("/", "-", $request->dtaBatismoEs);
             $dtaBatismoEsSql = date('Y-m-d', strtotime($dtaBatismoEs));
-        }else{
+        } else {
             $dtaBatismoEsSql = $request->dtaBatismoEs;
         }
         if ($request->dtaDesligamento != null) {
             $dtaDesligamento = str_replace("/", "-", $request->dtaDesligamento);
             $dtaDesligamentoSql = date('Y-m-d', strtotime($dtaDesligamento));
-        }else{
+        } else {
             $dtaDesligamentoSql = $request->dtaDesligamento;
         }
 
@@ -109,7 +109,7 @@ class MembrosController extends Controller
         ]);
 
         if ($request->foto != null) {
-            $fotoId = Storage::disk('img_profile')->putFile('',$request->foto);
+            $fotoId = Storage::disk('img_profile')->putFile('', $request->foto);
 
             $membro = Membro::find($membroCriado->id);
             $membro->update([
@@ -140,19 +140,19 @@ class MembrosController extends Controller
         if ($request->dtaBatismoAguas != null) {
             $dtaBatismoAguas = str_replace("/", "-", $request->dtaBatismoAguas);
             $dtaBatismoAguasSql = date('Y-m-d', strtotime($dtaBatismoAguas));
-        }else{
+        } else {
             $dtaBatismoAguasSql = $request->dtaBatismoAguas;
         }
         if ($request->dtaBatismoEs != null) {
             $dtaBatismoEs = str_replace("/", "-", $request->dtaBatismoEs);
             $dtaBatismoEsSql = date('Y-m-d', strtotime($dtaBatismoEs));
-        }else{
+        } else {
             $dtaBatismoEsSql = $request->dtaBatismoEs;
         }
         if ($request->dtaDesligamento != null) {
             $dtaDesligamento = str_replace("/", "-", $request->dtaDesligamento);
             $dtaDesligamentoSql = date('Y-m-d', strtotime($dtaDesligamento));
-        }else{
+        } else {
             $dtaDesligamentoSql = $request->dtaDesligamento;
         }
         $oldFotoId = Membro::find($request->id);
@@ -200,7 +200,7 @@ class MembrosController extends Controller
         if ($request->foto != null) {
 
             Storage::disk('img_profile')->delete('', $oldFotoId['fotoId']);
-            $fotoId = Storage::disk('img_profile')->putFile('',$request->foto);
+            $fotoId = Storage::disk('img_profile')->putFile('', $request->foto);
 
             $membro = Membro::find($request->id);
             $membro->update([
@@ -220,5 +220,40 @@ class MembrosController extends Controller
 
         }
 
+    }
+
+    public function excluirMembro(MembroRequest $request)
+    {
+        if ($request->dtaDesligamento != null) {
+            $dtaDesligamento = str_replace("/", "-", $request->dtaDesligamento);
+            $dtaDesligamentoSql = date('Y-m-d', strtotime($dtaDesligamento));
+        } else {
+            $dtaDesligamentoSql = $request->dtaDesligamento;
+        }
+
+        $membro = Membro::find($request->id);
+        $membro->update([
+            'motivoDesligamento' => $request->motivoDesligamento,
+            'dtaDesligamento' => $dtaDesligamentoSql,
+            'destino' => $request->destino,
+            'ativo' => false
+        ]);
+
+        Session::flash('message', 'Membro atualizado com sucesso!');
+
+        return redirect(route('Membros'));
+    }
+
+    public function reativarMembro(MembroRequest $request)
+    {
+
+        $membro = Membro::find($request->id);
+        $membro->update([
+            'ativo' => true
+        ]);
+
+        Session::flash('message', 'Membro atualizado com sucesso!');
+
+        return redirect(route('Membros'));
     }
 }

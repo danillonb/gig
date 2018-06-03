@@ -28,3 +28,5 @@ Route::get('/membros', 'MembrosController@index')->name('Membros');
 
 Route::post('/cadastrarMembro', 'MembrosController@cadastrarMembro')->name('cadastrarMembro');
 Route::post('/atualizarMembro', 'MembrosController@atualizarMembro')->name('atualizarMembro');
+Route::post('/excluirMembro', 'MembrosController@excluirMembro')->name('excluirMembro');
+Route::post('/reativarMembro', 'MembrosController@reativarMembro')->name('reativarMembro');

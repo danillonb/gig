@@ -32,10 +32,10 @@
                     @else
                         <li><a href="{{route('Painel Principal')}}"><i class="material-icons right tooltipped" data-position="bottom" data-tooltip="{{__('Painel Principal')}}">dashboard</i></a></li></li>
                         <li><a href="#"><i class="material-icons right tooltipped" data-position="bottom" data-tooltip="{{__('Cartão de Membros')}}">contact_mail</i></a></li>
-                        <li><a href="#"><i class="material-icons right tooltipped" data-position="bottom" data-tooltip="{{__('Declarações')}}">web</i></a></li>
                         <li><a href="#"><i class="material-icons right tooltipped" data-position="bottom" data-tooltip="{{__('Igrejas')}}">home</i></a></li>
                         <li><a href="{{route('Membros')}}"><i class="material-icons right tooltipped" data-position="bottom" data-tooltip="{{__('Membros')}}">group</i></a></li>
                         <li><a href="#"><i class="material-icons right tooltipped" data-position="bottom" data-tooltip="{{__('Relatórios')}}">description</i></a></li>
+                        <li><a href="#"><i class="material-icons right tooltipped" data-position="bottom" data-tooltip="{{__('Site')}}">web</i></a></li>
                         <li><a href="#"><i class="material-icons right tooltipped" data-position="bottom" data-tooltip="{{__('Tabelas Administrativas')}}">view_list</i></a></li>
                         <li><a href="#"><i class="material-icons right tooltipped" data-position="bottom" data-tooltip="{{__('Tesouraria')}}">monetization_on</i></a></li>
                         <li><a href="#"><i class="material-icons right tooltipped" data-position="bottom" data-tooltip="{{__('Usuários')}}">person_outline</i></a></li>

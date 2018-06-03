@@ -34,10 +34,10 @@
         <li class="divider"></li>
         <li><a href="{{route('Painel Principal')}}">{{__('Painel Principal')}}<i class="material-icons right">dashboard</i></a></li></a></li>
         <li><a href="#">{{__('Cartão de Membros')}}<i class="material-icons right">contact_mail</i></a></li>
-        <li><a href="#">{{__('Declarações')}}<i class="material-icons right">web</i></a></li>
         <li><a href="#">{{__('Igrejas')}}<i class="material-icons right">home</i></a></li>
         <li><a href="{{route('Membros')}}">{{__('Membros')}}<i class="material-icons right">group</i></a></li>
         <li><a href="#">{{__('Relatórios')}}<i class="material-icons right">description</i></a></li>
+        <li><a href="#">{{__('Site')}}<i class="material-icons right">web</i></a></li>
         <li><a href="#" class="dropdown-trigger" data-target="tab-adm-sidenav">{{__('Tabelas Administrativas')}}<i class="material-icons right">view_list</i></a></li>
         <li><a href="#">{{__('Tesouraria')}}<i class="material-icons right">monetization_on</i></a></li>
         <li><a href="#">{{__('Usuários')}}<i class="material-icons right">person_outline</i></a></li>

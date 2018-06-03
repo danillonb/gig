@@ -25,8 +25,9 @@ class HomeController extends Controller
     public function dashboard()
     {
 
-        $contadorMembros = Membro::count();
+        $contadorMembrosAtivos = Membro::where('ativo', 1)->count();
+        $contadorMembrosInativos = Membro::where('ativo', 0)->count();
 
-        return view('dashboard', compact('contadorMembros'));
+        return view('dashboard', compact('contadorMembrosAtivos', 'contadorMembrosInativos'));
     }
 }

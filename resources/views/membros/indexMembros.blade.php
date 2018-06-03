@@ -36,7 +36,11 @@
                                             @elseif($membro->fotoId == "0")
                                                 <img class="circle responsive-img" src="{{asset('img/membros/0/0.png')}}">
                                             @endif
-                                            <a href="#modalAlterarMembro{{$membro->id}}" class="btn-floating halfway-fab waves-effect waves-light blue-grey modal-trigger">
+                                                @if($membro->ativo == true)
+                                                    <a href="#modalAlterarMembro{{$membro->id}}" class="btn-floating halfway-fab waves-effect waves-light blue-grey modal-trigger">
+                                                @elseif($membro->ativo == false)
+                                                    <a href="#modalReativarMembro{{$membro->id}}" class="btn-floating halfway-fab waves-effect waves-light blue-grey modal-trigger">
+                                                @endif
                                                 <i class="material-icons tooltipped" data-position="right"
                                                    data-tooltip="{{__('Editar')}}">edit</i>
                                             </a>
@@ -74,12 +78,6 @@
                                             @endif
                                             <p><b>Expeditor: </b>{{$membro->orgaoExp}}</p>
                                             <p><b>Igreja: </b>{{$membro->igreja}}</p>
-                                            @if($membro->dtaDesligamento != null)
-                                                <p><b>Desligamento: </b>{{date('d/m/Y', strtotime($membro->dtaDesligamento))}}</p>
-                                            @endif
-                                            @if($membro->motivoDesligamento != null)
-                                                <p><b>Motivo: </b>{{$membro->motivoDesligamento}}</p>
-                                            @endif
                                             @if($membro->dtaBatismoAguas != null)
                                                 <p><b>Batismo A.: </b>{{date('d/m/Y', strtotime($membro->dtaBatismoAguas))}}</p>
                                             @endif
@@ -107,10 +105,16 @@
                                             @if($membro->departamento != null)
                                                 <p><b>Departamento: </b>{{$membro->departamento}}</p>
                                             @endif
+                                            @if($membro->dtaDesligamento != null)
+                                                <p><b>Desligamento: </b>{{date('d/m/Y', strtotime($membro->dtaDesligamento))}}</p>
+                                            @endif
+                                            @if($membro->motivoDesligamento != null)
+                                                <p><b>Motivo: </b>{{$membro->motivoDesligamento}}</p>
+                                            @endif
                                             @if($membro->destino != null)
                                                 <p><b>Destino: </b>{{$membro->destino}}</p>
                                             @endif
-                                            @if ($membro->ativo = true)
+                                            @if ($membro->ativo == true)
                                                 <p><b>Status: </b>Ativo</p>
                                             @else
                                                 <p><b>Status: </b>Inativo</p>
@@ -624,7 +628,7 @@
                                 <input id="igreja" name="igreja" type="text"
                                        class="validate {{ $errors->has('igreja') ? 'invalid' : '' }} autocomplete-igreja"
                                        value="{{ $membro->igreja }}" required
-                                        autocomplete="off">
+                                       autocomplete="off">
                                 <label for="igreja">{{__('Igreja')}}</label>
                                 @if ($errors->has('igreja'))
                                     <span class="helper-text red-text"><strong>{{$errors->first('igreja')}}</strong></span>
@@ -769,8 +773,70 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type='reset' class='btn waves-effect red hoverable left'>{{__('Limpar')}}</button>
+                        <a href="#modalExcluirMembro{{$membro->id}}" class="btn waves-effect red hoverable left modal-trigger modal-close">{{__('Desativar')}}</a>
                         <button type='submit' class='btn waves-effect teal hoverable'>{{__('Salvar')}}</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Modal Structure - Excluir Membro -->
+            <div id="modalExcluirMembro{{$membro->id}}" class="modal">
+                <form action="{{route('excluirMembro')}}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="modal-content">
+                        <h4>Desativar Membro<span class="modal-close right hide-on-med-and-down tooltipped" data-position="left"
+                                                  data-tooltip="{{__('Fechar')}}"><i class="material-icons">close</i></span></h4>
+                        <input id="id" name="id" type="number" class="hide" value="{{ $membro->id }}" >
+                        <div class="divider"></div>
+                        <div class='row'>
+                            <div class='input-field col s12 m12 l4'>
+                                <input id="motivoDesligamento" name="motivoDesligamento" type="text"
+                                       class="validate {{ $errors->has('motivoDesligamento') ? 'invalid' : '' }}"
+                                       value="{{ $membro->motivoDesligamento }}" required autofocus>
+                                <label for="motivoDesligamento">{{__('Motivo do Desligamento')}}</label>
+                                @if ($errors->has('motivoDesligamento'))
+                                    <span class="helper-text red-text"><strong>{{$errors->first('motivoDesligamento')}}</strong></span>
+                                @endif
+                            </div>
+                            <div class='input-field col s12 m12 l3'>
+                                <input id="dtaDesligamento" name="dtaDesligamento" type="date"
+                                       class="validate {{ $errors->has('dtaDesligamento') ? 'invalid' : '' }}"
+                                       value="{{ $membro->dtaDesligamento }}" required>
+                                <label for="dtaDesligamento">{{__('Data de Desligamento')}}</label>
+                                @if ($errors->has('dtaDesligamento'))
+                                    <span class="helper-text red-text"><strong>{{$errors->first('dtaDesligamento')}}</strong></span>
+                                @endif
+                            </div>
+                            <div class='input-field col s12 m12 l3'>
+                                <input id="destino" name="destino" type="text"
+                                       class="validate {{ $errors->has('destino') ? 'invalid' : '' }}" value="{{ $membro->destino }}"
+                                       required>
+                                <label for="destino">{{__('Destino')}}</label>
+                                @if ($errors->has('destino'))
+                                    <span class="helper-text red-text"><strong>{{$errors->first('destino')}}</strong></span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type='reset' class='btn waves-effect red hoverable left'>{{__('Limpar')}}</button>
+                            <button type='submit' class='btn waves-effect teal hoverable'>{{__('Salvar')}}</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Modal Structure - Reativar Membro -->
+            <div id="modalReativarMembro{{$membro->id}}" class="modal">
+                <form action="{{route('reativarMembro')}}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="modal-content">
+                        <h4>Reativar Membro <b>{{$membro->nome}}</b>?<span class="modal-close right hide-on-med-and-down tooltipped" data-position="left"
+                                                  data-tooltip="{{__('Fechar')}}"><i class="material-icons">close</i></span></h4>
+                        <input id="id" name="id" type="number" class="hide" value="{{ $membro->id }}" >
+                        <div class="divider"></div>
+                        <p><b>{{$membro->nome}}</b> está com status <b>Inativo</b> para fazer alterações deve ativá-lo novamente</p>
+                        <div class="modal-footer">
+                            <button type='reset' class='left btn waves-effect red hoverable modal-close'>{{__('Não')}}</button>
+                            <button type='submit' class='btn waves-effect teal hoverable'>{{__('Sim')}}</button>
+                        </div>
                     </div>
                 </form>
             </div>
